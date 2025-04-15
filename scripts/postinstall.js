@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // .env.example をコピー
-const envSrc = path.resolve(__dirname, "../lib/.env.example");
+const envSrc = path.resolve(__dirname, "../.env.example");
 const envDst = path.resolve(process.cwd(), ".env");
 
 if (!fs.existsSync(envDst)) {

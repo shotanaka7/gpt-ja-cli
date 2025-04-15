@@ -1,6 +1,6 @@
 {
   "name": "@shotanaka7/gpt-ja-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "main": "./lib/gpt.ts",
   "scripts": {
@@ -16,5 +16,10 @@
   },
   "bin": {
     "gpt": "./lib/gpt.ts"
-  }
+  },
+  "files": [
+    ".env.example",
+    "lib",
+    "scripts"
+  ]
 }
