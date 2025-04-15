@@ -1,11 +1,13 @@
-import fs from "fs";
-import path from "path";
+const path = require("path");
+const fs = require("fs");
 
-const __dirname = process.cwd();
+// パッケージの絶対パスを取得（このスクリプト自身の場所）
+const here = path.dirname(__filename);
+const projectRoot = process.cwd();
 
-function copyIfNotExists(srcName: string, dstName: string) {
-  const src = path.resolve(__dirname, "..", srcName);
-  const dst = path.resolve(__dirname, dstName);
+function copyIfNotExists(srcName, dstName) {
+  const src = path.resolve(here, "..", srcName);      // ← パッケージ内のファイルを探す
+  const dst = path.resolve(projectRoot, dstName);     // ← 呼び出し元のプロジェクト直下に出力
 
   if (!fs.existsSync(dst)) {
     fs.copyFileSync(src, dst);
@@ -19,4 +21,4 @@ function copyIfNotExists(srcName: string, dstName: string) {
 }
 
 copyIfNotExists(".env.example", ".env");
-copyIfNotExists("lib/systemMessage.ts", "systemMessage.ts");
+copyIfNotExists("lib/gptSystemPrompt.ts", "gptSystemPrompt.ts");
