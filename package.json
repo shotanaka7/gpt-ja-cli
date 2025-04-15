@@ -1,6 +1,6 @@
 {
   "name": "@shotanaka7/gpt-ja-cli",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "main": "./lib/gpt.ts",
   "scripts": {
@@ -8,9 +8,7 @@
   },
   "dependencies": {
     "dotenv": "^16.0.0",
-    "openai": "^4.0.0"
-  },
-  "devDependencies": {
+    "openai": "^4.0.0",
     "tsx": "^4.0.0"
   },
   "bin": {

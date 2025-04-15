@@ -6,12 +6,12 @@
 
 ```bash
 pnpm add -D @shotanaka7/gpt-ja-cli
-gpt-init
+npx gpt-init
 ```
 
 ## 環境変数
 
-`gpt-init` によって `.env` が自動で生成されます。
+`npx gpt-init` によって `.env` が自動で生成されます。
 ただし、すでに `.env` がある場合には下記の環境変数を必ず指定してください。
 
 ```env

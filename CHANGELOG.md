@@ -1,3 +1,9 @@
+## [0.2.1] - 2025-04-15
+### Changed
+- `tsx` を `dependencies` に移動し、CLIコマンドが依存環境で確実に動作するように修正
+- `systemMessage.ts` を `gptSystemPrompt.ts` にリネーム
+- README に `gpt-init` 実行手順を追記し、`pnpm exec` や `npx` での動作に関する注意を明示
+
 ## [0.2.0] - 2025-04-15
 ### Changed
 - `systemMessage.ts` を `gptSystemPrompt.ts` にリネームし、用途を明確化
