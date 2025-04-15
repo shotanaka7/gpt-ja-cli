@@ -6,7 +6,7 @@ build({
   bundle: true,
   platform: "node",
   target: "node18",
-  format: "esm",
+  format: "cjs",
   banner: {
     js: "#!/usr/bin/env node",
   },

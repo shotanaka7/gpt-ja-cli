@@ -1,14 +1,12 @@
-#!/usr/bin/env tsx
+#!/usr/bin/env node
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const root = process.cwd();
+const __dirname = process.cwd();
 
 function copyIfNotExists(srcName: string, dstName: string) {
   const src = path.resolve(__dirname, "..", srcName);
-  const dst = path.resolve(root, dstName);
+  const dst = path.resolve(__dirname, dstName);
 
   if (!fs.existsSync(dst)) {
     fs.copyFileSync(src, dst);

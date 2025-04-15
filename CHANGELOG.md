@@ -1,3 +1,8 @@
+## [0.2.4] - 2025-04-15
+### Fixed
+- `dist/gpt-init.js` が CommonJS 形式でビルドされていなかった問題を修正し、`npx gpt-init` が正常に実行できるように対応
+- `gpt-init.ts` から `import.meta.url` を排除し、`process.cwd()` によるディレクトリ解決に切り替え
+
 ## [0.2.2] - 2025-04-15
 ### Changed
 - `gpt-init.ts` を事前にビルドし、`dist/gpt-init.js` として公開することで `tsx` なしで即時実行可能に変更
