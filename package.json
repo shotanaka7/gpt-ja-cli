@@ -4,8 +4,7 @@
   "type": "module",
   "main": "./lib/gpt.ts",
   "scripts": {
-    "gpt": "tsx ./lib/gpt.ts",
-    "postinstall": "node ./scripts/postinstall.js"
+    "gpt": "tsx ./lib/gpt.ts"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
@@ -15,11 +14,7 @@
     "tsx": "^4.0.0"
   },
   "bin": {
-    "gpt": "./lib/gpt.ts"
-  },
-  "files": [
-    ".env.example",
-    "lib",
-    "scripts"
-  ]
+    "gpt": "./lib/gpt.ts",
+    "gpt-init": "./bin/gpt-init.ts"
+  }
 }

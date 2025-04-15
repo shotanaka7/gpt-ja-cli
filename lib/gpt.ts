@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import fs from "fs";
 dotenv.config();
 
-import { systemMessage } from "../systemMessage.js"; // ユーザールートのもの
+import { gptSystemPrompt } from "../gptSystemPrompt.js"; // ユーザールートのもの
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const model = process.env.OPENAI_MODEL || "gpt-4.1";
@@ -27,7 +27,7 @@ let messages: any[] = [];
 if (fs.existsSync(historyPath)) {
   messages = JSON.parse(fs.readFileSync(historyPath, "utf-8"));
 } else {
-  messages.push(systemMessage);
+  messages.push(gptSystemPrompt);
 }
 
 const suffix = isFullOutput

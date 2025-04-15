@@ -1,4 +1,13 @@
-# Changelog
+## [0.2.0] - 2025-04-15
+### Changed
+- `systemMessage.ts` を `gptSystemPrompt.ts` にリネームし、用途を明確化
+- 自動コピー機能（postinstall.js）を削除し、初期化コマンドに一本化
+
+### Added
+- `gpt-init` コマンドを新規追加（`.env` および `gptSystemPrompt.ts` を初期化）
+- `--all` オプションで全文出力モードを追加（デフォルトは差分出力）
+- `--apply` オプションで修正内容をファイルに自動上書き
+- `README.md` に初期化コマンドと新オプションの説明を反映
 
 ## [0.1.2] - 2025-04-15
 ### Added
