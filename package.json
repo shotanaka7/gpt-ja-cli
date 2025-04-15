@@ -1,6 +1,6 @@
 {
   "name": "@shotanaka7/gpt-ja-cli",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "type": "module",
   "main": "./lib/gpt.ts",
   "scripts": {
