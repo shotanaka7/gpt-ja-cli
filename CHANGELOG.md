@@ -1,3 +1,8 @@
+## [0.2.5] - 2025-04-15
+### Fixed
+- `dist/gpt-init.js` を `.cjs` 形式で出力するよう変更し、Node.js が CommonJS として正しく解釈するように修正
+- `package.json` の `bin.gpt-init` を `dist/gpt-init.cjs` に変更し、`npx gpt-init` 実行時の構文エラーを解消
+
 ## [0.2.4] - 2025-04-15
 ### Fixed
 - `dist/gpt-init.js` が CommonJS 形式でビルドされていなかった問題を修正し、`npx gpt-init` が正常に実行できるように対応
