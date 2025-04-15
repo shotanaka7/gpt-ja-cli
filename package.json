@@ -1,10 +1,11 @@
 {
   "name": "@shotanaka7/gpt-ja-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "main": "./lib/gpt.ts",
   "scripts": {
-    "gpt": "tsx ./lib/gpt.ts"
+    "gpt": "tsx ./lib/gpt.ts",
+    "postinstall": "node ./scripts/postinstall.js"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
@@ -12,5 +13,8 @@
   },
   "devDependencies": {
     "tsx": "^4.0.0"
+  },
+  "bin": {
+    "gpt": "./lib/gpt.ts"
   }
 }
