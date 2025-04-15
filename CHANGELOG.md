@@ -1,3 +1,10 @@
+## [0.2.2] - 2025-04-15
+### Changed
+- `gpt-init.ts` を事前にビルドし、`dist/gpt-init.js` として公開することで `tsx` なしで即時実行可能に変更
+- `bin` エントリを `gpt-init.ts` → `dist/gpt-init.js` に変更
+- `.gitignore` から `dist/` を除外し、npm公開対象に含めるよう修正
+- `README.md` から `tsx` に関する記述を削除し、`npx gpt-init` に統一
+
 ## [0.2.1] - 2025-04-15
 ### Changed
 - `tsx` を `dependencies` に移動し、CLIコマンドが依存環境で確実に動作するように修正

@@ -1,6 +1,6 @@
 {
   "name": "@shotanaka7/gpt-ja-cli",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "type": "module",
   "main": "./lib/gpt.ts",
   "scripts": {
@@ -13,6 +13,14 @@
   },
   "bin": {
     "gpt": "./lib/gpt.ts",
-    "gpt-init": "./bin/gpt-init.ts"
-  }
+    "gpt-init": "./dist/gpt-init.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.2"
+  },
+  "files": [
+    ".env.example",
+    "lib",
+    "dist"
+  ]
 }
